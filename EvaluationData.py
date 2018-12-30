@@ -31,9 +31,9 @@ class EvaluationData:
         self.LOOCVAntiTestSet = self.LOOCVTrain.build_anti_testset()
         
         #Compute similarty matrix between items so we can measure diversity
-        #sim_options = {'name': 'cosine', 'user_based': False}
-        #self.simsAlgo = KNNBaseline(sim_options=sim_options)
-        #self.simsAlgo.fit(self.fullTrainSet)
+        sim_options = {'name': 'cosine', 'user_based': False}
+        self.simsAlgo = KNNBaseline(sim_options=sim_options)
+        self.simsAlgo.fit(self.fullTrainSet)
             
     def GetFullTrainSet(self):
         return self.fullTrainSet

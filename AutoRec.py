@@ -5,14 +5,15 @@ from tensorflow.python.framework import ops
 class AutoRec(object):
 
     def __init__(self, visibleDimensions, epochs=200, hiddenDimensions=50, learningRate=0.1, batchSize=100):
-
+    
+		# visibleDimension is # of movies * number of distinct ratings (one hot vector for rating)
         self.visibleDimensions = visibleDimensions
         self.epochs = epochs
         self.hiddenDimensions = hiddenDimensions
         self.learningRate = learningRate
         self.batchSize = batchSize
         
-                
+   	# # X is the inputs, row is user, columns # of movies * distinct ratings             
     def Train(self, X):
 
         ops.reset_default_graph()
