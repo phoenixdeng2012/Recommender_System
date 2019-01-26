@@ -33,6 +33,16 @@ Recommend items that are similiar to what a used purchased before.
   - find top 40 most similiar items to the top 10 items a user liked
   - [Item based Collaborative Filtering Code](https://github.com/phoenixdeng2012/Recommender_System/blob/master/Item_based_collaborative_filtering.ipynb)
   
+ ### Matrix Factorization:
  
+ The user rating matrix can be factorized as a product of user matrix (rows are users, columns are latent features) and item matrix.
+ 
+ - [Matrix Factorization Code](https://github.com/phoenixdeng2012/Recommender_System/blob/master/Recommending_System_SVD.ipynb)
+ 
+### AutoEncoder:
+
+Typically deep learning based recommender system faces challenge of how to deal with sparse matrix in matrix multiplication. There is no easy way to ignore items where there is no rating in matrix multiplication. Some method just deal with no rating as 0s and ignore them, this basically treat missing values as if the users hate those movies since the rating is 0. The code just simply treat missing value as 0.
+
+- [AutoEncoder](https://github.com/phoenixdeng2012/Recommender_System/blob/master/AutoEncoder%20Recommender%20System.ipynb)
   
 
