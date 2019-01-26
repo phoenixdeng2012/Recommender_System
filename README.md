@@ -43,6 +43,6 @@ Recommend items that are similiar to what a used purchased before.
 
 Typically deep learning based recommender system faces challenge of how to deal with sparse matrix in matrix multiplication. There is no easy way to ignore items where there is no rating in matrix multiplication. Some method just deal with no rating as 0s and ignore them, this basically treat missing values as if the users hate those movies since the rating is 0. The code just simply treat missing value as 0.
 
-- [AutoEncoder](https://github.com/phoenixdeng2012/Recommender_System/blob/master/AutoEncoder%20Recommender%20System.ipynb)
+- [AutoEncoder](https://github.com/phoenixdeng2012/Recommender_System/blob/master/AutoRecAlgorithm.py)
   
 
